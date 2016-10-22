@@ -300,14 +300,14 @@ section {
 .our-services .col-sm-4 {
   border-right:1px solid #f2f2f2;
   border-bottom:1px solid #f2f2f2;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .our-services .col-sm-4:nth-child(4), 
 .our-services .col-sm-4:nth-child(5), 
 .our-services .col-sm-4:nth-child(6) {
   border-bottom:0;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .our-services .col-sm-4:nth-child(3), 
@@ -316,7 +316,7 @@ section {
 }
 
 .service-info h3 {
-  margin-top: 35px;
+  margin-top: 0px;
 }
 
 /*************************
