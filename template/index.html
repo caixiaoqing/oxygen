@@ -22,67 +22,72 @@
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="images/favicon1.png">
 </head><!--/head-->
 
 <body>
 
-  <header id="home">
-    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="item active" style="background-image: url(images/slider/1.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Welcome to <span>Pioneer Sci-Tech</span></h1>
-            <p class="animated fadeInRightBig">We are committed to creating great digital ideas.</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
-        </div>
-        <div class="item" style="background-image: url(images/slider/2.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">Grow your business <span>with Us</span></h1>
-            <p class="animated fadeInRightBig">What we do for you not just a website <br />as well as the effort devoted and attention to detail poured.</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
-        </div>
-        <div class="item" style="background-image: url(images/slider/3.jpg)">
-          <div class="caption">
-            <h1 class="animated fadeInLeftBig">It's all about your <span>Website Design &amp;</span> <span>Online Branding</span></h1>
-            <p class="animated fadeInRightBig">Talk to us now.</p>
-            <a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Start now</a>
-          </div>
-        </div>
-      </div>
-      <a class="left-control" href="#home-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-      <a class="right-control" href="#home-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
-
-      <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
-
-    </div><!--/#home-slider-->
-    <div class="main-nav">
+ <header id="home">
+    <div class="main-nav navbar-fixed-top" background-color="#1cb155">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header" >
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
-          </a>                    
+          <div>
+            <img class="logo-pst centered"  src="images/logo.png" alt="logo">
+          </div>
         </div>
         <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">                 
+          <ul class="nav navbar-nav navbar-right">
             <li class="scroll active"><a href="#home">Home</a></li>
-            <li class="scroll"><a href="#services">Service</a></li> 
-            <li class="scroll"><a href="#about-us">About Us</a></li>                     
-            <!--<li class="scroll"><a href="#portfolio">Portfolio</a></li>-->
-            <li class="scroll"><a href="#contact">Contact</a></li>       
+            <li class="scroll"><a href="#services">Service</a></li>
+            <li class="scroll"><a href="#process">Process</a></li>
+            <li class="scroll"><a href="#about-us">About Us</a></li>
+            <li class="scroll"><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </div><!--/#main-nav-->
   </header><!--/#home-->
+
+  <!-- SLIDER -->
+	<section id="slider">
+		<div id="home-carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="item active" style="background-image: url(images/slider/1.jpg)">
+					<div class="carousel-caption container">
+						<h1>Welcome to </h1>
+						<h2> Pioneer Sci-Tech</h2>
+					</div>
+				</div>
+ 
+				<div class="item" style="background-image: url(images/slider/2.jpg)">
+					<div class="carousel-caption container">
+						<h1>Grow your business </h1>
+				        <h2> with Us</h2>
+					</div>
+				</div>
+				<div class="item" style="background-image: url(images/slider/3.jpg)">
+					<div class="carousel-caption container">
+						<h1>It's all about your </h1>
+				        <h2>Website &amp; Online Branding</h2>
+
+					</div>
+				</div>
+                <!--<p>What we do for you not just a website <br />as well as the effort devoted and attention to detail poured.</p>-->
+                <!--<p>Talk to us now.</p>-->
+				<a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+				<a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+			</div>
+		</div> <!--/#home-carousel-->
+    </section>
+	<!-- /SLIDER -->
+
+
   <section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -97,7 +102,7 @@
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/1.jpg" alt="...">
+                    <img class="img-responsive" src="images/service/1.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>Corporate website design</h3></div>
             </div>
@@ -106,21 +111,22 @@
               <p>Business websites should not be boring and dull. It should be visually appealing. Enhance your customers’ experience with web design that is both creative and professional.</p>
             </div>
           </div>
+            
           <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/2.jpg" alt="...">
+                    <img class="img-responsive" src="images/service/2.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>E-Commerce website design</h3></div>
             </div>
             <div class="service-info">
-              <p>Online shopping is all about credibility and convenience. Make sure your customer gets both through a well-designed and executed eCommerce website.</p>
+              <p>Online shopping, also known as e-commerce, is all about credibility and convenience. Make sure your customer gets both through a well-designed and executed eCommerce website.</p>
             </div>
           </div>
          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/3.jpg" alt="...">
+                    <img class="img-responsive" src="images/service/3.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>Custom web design</h3></div>
             </div>
@@ -131,7 +137,7 @@
          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/4.jpg" alt="...">
+                    <img class="img-responsive" src="images/service/4.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>App Development</h3></div>
             </div>
@@ -142,7 +148,7 @@
           <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/5.jpg" alt="...">
+                    <img class="img-responsive" src="images/service/5.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>Search Engine Optimization</h3></div>
             </div>
@@ -154,7 +160,7 @@
         <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
             <div class="panel panel-default">
                   <div class="panel-body">
-                    <img src="images/service/6.jpg" alt="...">
+                    <img class="img-responsive"src="images/service/6.jpg" alt="...">
                   </div>
                   <div class="panel-heading"><h3>Awesome Support</h3></div>
             </div>
@@ -167,6 +173,68 @@
       </div>
     </div>
   </section><!--/#services-->
+    
+  <section id="process">
+      <div class="container">
+          <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="row">
+              <div class="text-center col-sm-8 col-sm-offset-2">
+                <h2>Our Process</h2>
+              </div>
+            </div> 
+          </div>
+          <div class="text-center our-services">
+            <div class="row">
+                <div class="col-sm-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="panel panel-default">
+                          <div class="panel-body">
+                            <img class="img-responsive" src="images/process/1.png" alt="...">
+                          </div>
+                          <div class="panel-heading"><h3>1. Talk</h3><h5>We listen - You say</h5></div>
+                    </div>
+                    <div class="service-info">
+                      <p>Understand your ideas and make suggestions. We hope can earn Your Trust.</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+                    <div class="panel panel-default">
+                          <div class="panel-body">
+                            <img class="img-responsive" src="images/process/2.png" alt="...">
+                          </div>
+                          <div class="panel-heading"><h3>2. Design</h3><h5>We design - You decide</h5></div>
+                    </div>
+                    <div class="service-info">
+                      <p>Provide designs for you to choose. Detailed Specifications will be settled together.</p>
+                    </div>
+                  </div>
+                 <div class="col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+                    <div class="panel panel-default">
+                          <div class="panel-body">
+                            <img class="img-responsive" src="images/process/3.png" alt="...">
+                          </div>
+                          <div class="panel-heading"><h3>3. Development</h3><h5>We work - You get</h5></div>
+                    </div>
+                    <div class="service-info">
+                      <p>Upon your confirmation, let us take over the rest. Your Website will be published online.</p>
+                    </div>
+                  </div>
+                 <div class="col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+                    <div class="panel panel-default">
+                          <div class="panel-body">
+                            <img class="img-responsive" src="images/process/4.png" alt="...">
+                          </div>
+                          <div class="panel-heading"><h3>4. Maintenance</h3><h5>We support - You secure</h5></div>
+                    </div>
+                    <div class="service-info">
+                      <p>Our Background Services make sure your website healthy and updated.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+  </section>
+    
   <section id="about-us" class="parallax">
     <div class="container">
       <div class="row">
@@ -186,229 +254,8 @@
     </div>
   </section><!--/#about-us-->
 
-<!---------------------------------------portfolio
-  <section id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Our Portfolio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
-        </div>
-      </div> 
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/4.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
-            <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
-            </div>
-            <div class="overlay">
-              <div class="overlay-content">
-                <div class="overlay-text">
-                  <div class="folio-info">
-                    <h3>Time Hours</h3>
-                    <p>Design, Photography</p>
-                  </div>
-                  <div class="folio-overview">
-                    <span class="folio-link"><a class="folio-read-more" href="#" data-single_url="portfolio-single.html" ><i class="fa fa-link"></i></a></span>
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="portfolio-single-wrap">
-      <div id="portfolio-single">
-      </div>
-    </div>
-  </section>
--->
-    <!--/#portfolio-->
-
-<!-----------------------------------------------------features
-  <section id="features" class="parallax">
-    <div class="container">
-      <div class="row count">
-        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <i class="fa fa-user"></i>
-          <h3 class="timer">4000</h3>
-          <p>Happy Clients</p>
-        </div>
-        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-          <i class="fa fa-desktop"></i>
-          <h3 class="timer">200</h3>                    
-          <p>Modern Websites</p>
-        </div> 
-        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
-          <i class="fa fa-trophy"></i>
-          <h3 class="timer">10</h3>                    
-          <p>WINNING AWARDS</p>
-        </div> 
-        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
-          <i class="fa fa-comment-o"></i>                    
-          <h3>24/7</h3>
-          <p>Fast Support</p>
-        </div>                 
-      </div>
-    </div>
-  </section>
-    -->
-    <!--/#features-->
-
 
   <section id="contact">
-    <div id="google-map" class="wow fadeIn" data-latitude="1.358753" data-longitude="103.831623" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
     <div id="contact-us" class="parallax">
       <div class="container">
         <div class="row">
@@ -419,7 +266,7 @@
         <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
           <div class="row">
             <div class="col-sm-6">
-              <form name="contact-form" method="post" action="sendemail.php">
+              <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                 <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <div class="col-sm-6">
                     <div class="form-group">
@@ -444,14 +291,14 @@
               </form>   
             </div>
             <div class="col-sm-6">
-              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                <ul class="address">
-                  <li><i class="fa fa-map-marker"></i> <span> Address:</span> 22 Sin Ming Lane #06-76 Midview City Singapore 573969 </li>
-                  <li><i class="fa fa-phone"></i> <span> Phone:</span> +65 0000 0000  </li>
-                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:support@pst-sg.com"> support@pst-sg.com</a></li>
-                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.pst-sg.com</a></li>
-                </ul>
-              </div>                            
+                <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <ul class="address">
+                      <li><i class="fa fa-map-marker"></i> <span> Address:</span> 22 Sin Ming Lane #06-76 Midview City Singapore 573969 </li>
+                      <li><i class="fa fa-phone"></i> <span> Phone:</span> +65 0000 0000  </li>
+                      <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:support@pst-sg.com"> support@pst-sg.com</a></li>
+                      <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.pst-sg.com</a></li>
+                    </ul>
+                </div>
             </div>
           </div>
         </div>
@@ -479,7 +326,6 @@
 
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyCfAkS5GEnJaIUaXQ5stMVGcS7d0Ph-1cA&sensor=true"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/mousescroll.js"></script>

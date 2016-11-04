@@ -6,6 +6,12 @@
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    #home-carousel .item h1 {
+        font-size:36px;
+    }
+    #home-carousel .item h2 {
+        font-size:46px;
+    }
 }
 
 /* sm */
@@ -30,16 +36,35 @@
 	.btn-signup {
 		padding: 10px 20px;
 	}
+
+    #home-carousel .item h1 {
+        font-size:36px;
+    }
+    #home-carousel .item h2 {
+        font-size:46px;
+    }
 }
 
 /* xs */
 @media (max-width: 767px) {
+    .logo-pst{
+      height: 40px;
+      width: 40px;
+
+    }
+
 	body {
 		font-size: 14px;
 	}
-	#home-slider .caption h1 {
-		font-size: 40px;
-	}
+
+    #home-carousel .item h1 {
+        font-size:32px;
+        padding-bottom: 15px;
+    }
+    #home-carousel .item h2 {
+        font-size:36px;
+    }
+    
 	#home-slider .caption {
 		font-size: 15px;
 		padding: 0 30px;
@@ -76,6 +101,7 @@
 		padding-top: 10px;
 	}
 
+    
 	/*services*/
 	section {
 		padding: 45px 0;
@@ -207,6 +233,11 @@
 	.contact-info {
 		padding-left: 0;
 	}
+    #google-map {
+      height: 300px;
+      width:auto;
+      padding-left:0;
+    }
 	#footer .footer-bottom {
 		text-align: center;
 	}
@@ -225,5 +256,13 @@
 		width:100%;
 		float: none;
 	}
+    
+    #home-carousel .item h1 {
+        font-size:32px;
+        padding-bottom: 15px;
+    }
+    #home-carousel .item h2 {
+        font-size:36px;
+    }
 }
 

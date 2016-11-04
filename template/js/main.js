@@ -14,15 +14,6 @@ jQuery(function($) {
 		$('#home-slider .item').css('height',slideHeight);
 	});
 	
-	//Scroll Menu
-	$(window).on('scroll', function(){
-		if( $(window).scrollTop()>slideHeight ){
-			$('.main-nav').addClass('navbar-fixed-top');
-		} else {
-			$('.main-nav').removeClass('navbar-fixed-top');
-		}
-	});
-	
 	// Navigation Scroll
 	$(window).scroll(function(event) {
 		Scroll();
@@ -52,6 +43,12 @@ jQuery(function($) {
 			}
 		})
 	};
+
+    
+    $(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+    });
 
 	$('#tohash').on('click', function(){
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 5}, 1000);
@@ -121,43 +118,23 @@ jQuery(function($) {
 
 	// Contact form
 	var form = $('#main-contact-form');
-	form.submit(function(event){
-		event.preventDefault();
-		var form_status = $('<div class="form_status"></div>');
-		$.ajax({
-			url: $(this).attr('action'),
-			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
-			}
-		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
-		});
-	});
+    form.submit(function(event){
+            event.preventDefault();
+            var form_status = $('<div class="form_status"></div>');
+            $.ajax({
+                type: "POST",
+                url: $(this).attr('action'),
+                data: $(form).serialize(),
 
-	//Google Map
-	var latitude = $('#google-map').data('latitude')
-	var longitude = $('#google-map').data('longitude')
-	function initialize_map() {
-		var myLatlng = new google.maps.LatLng(latitude,longitude);
-		var mapOptions = {
-			zoom: 14,
-			scrollwheel: false,
-			center: myLatlng
-		};
-		var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-		var contentString = '';
-		var infowindow = new google.maps.InfoWindow({
-			content: '<div class="map-content"><strong>Pioneer Sci-Tech Pte. Ltd.</strong><br><ul class="address">' + $('.address').html() + '</ul></div>'
-		});
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map
-		});
-		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
-		});
-	}
-	google.maps.event.addDomListener(window, 'load', initialize_map);
+                beforeSend: function(){
+                    form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+                }
+            }).done(function(data){
+                form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+            });
+
+            return false;
+	});
 	
 });
 

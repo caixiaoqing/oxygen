@@ -13,11 +13,6 @@ $headers[] = "Reply-To: {$from}";
 $headers[] = "Subject: {$subject}";
 $headers[] = "X-Mailer: PHP/".phpversion();
 
-$send = mail($to, $subject, $message, implode("\r\n", $headers));
+mail($to, $subject, $message, implode("\r\n", $headers));
 
-if ($send) {
-    header("Refresh:2; url=http://pst-sg.com#contact");
-    echo "Thank you for contacting us. We will be in touch with you very soon.";
-}
-else { echo "ERROR! Please go back and try again."; }
 die;
